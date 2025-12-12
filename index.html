@@ -1,50 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <title>Interactive Travel Photo Gallery</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Colors</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
-<body onload="addTabFocus()">
 
-  <h1>Travel Photo Gallery</h1>
+<body>
+  <header>
+    <h1 id="top">Colors!</h1>
+  </header>
 
-  <div id="image" role="img" aria-label="Image display area">
-    Hover over an image below to display here.
-  </div>
+  <main>
+    <h2>Basic Media Queries</h2>
+    <p>In this assignment you will add two media queries to the css file.</p>
+    <ul>
+      <li>The first media query should trigger at 772px and change the layout of the divs to be 45% of the viewport width. The images should have a maximum height of 30% of the viewport height.</li>
 
-  <div class="gallery">
-    <img src="https://images.pexels.com/photos/1236701/pexels-photo-1236701.jpeg"
-         alt="Beautiful beach with turquoise water"
-         onmouseover="upDate(this)" onmouseleave="undo()"
-         onfocus="upDate(this)" onblur="undo()">
+      <li>The second media query should trigger at 998px and change the layout of the divs to be 30% of the viewport width.</li>
+    </ul>
+    <p>You will need to make additional changes to ensure that the divs appear next to each other and that the images are contained within the divs.  Some of these properties include display, width and max-height.</p>
 
-    <img src="https://images.pexels.com/photos/417173/pexels-photo-417173.jpeg"
-         alt="Mountain view with snow caps"
-         onmouseover="upDate(this)" onmouseleave="undo()"
-         onfocus="upDate(this)" onblur="undo()">
+    <div>
+      <img src="images/Red.jpeg" alt="Red" width="200">
+      <p class = "label">Red</p>
+    </div>
+    <div>
+      <img src="images/Orange.png" alt="Orange" width="200">
+      <p class = "label">Orange</p>
+    </div>
+    <div>
+      <img src="images/Yellow.png" alt="Yellow" width="200">
+      <p class = "label">Yellow</p>
+    </div>
+    <div>
+      <img src="images/Green.png" alt="Green" width="200">
+      <p class = "label">Green</p>
+    </div>
+    <div>
+      <img src="images/Blue.png" alt="Blue" width="200">
+      <p class = "label">Blue</p>
+    </div>
+    <div>
+      <img src="images/Indigo.jpeg" alt="Indigo" width="200">
+      <p class = "label">Indigo</p>
+    </div>
+    <div>
+      <img src="images/Purple.png" alt="Purple" width="200">
+      <p class = "label">Purple</p>
+    </div>
+    <div>
+      <img src="images/Pink.jpeg" alt="Pink" width="200">
+      <p class = "label">Pink</p>
+    </div>
+    <div>
+      <img src="images/White.png" alt="White" width="200">
+      <p class = "label">White</p>
+    </div>
+    </div>
+  </main>
 
-    <img src="https://images.pexels.com/photos/358485/pexels-photo-358485.jpeg"
-         alt="Historic European city street"
-         onmouseover="upDate(this)" onmouseleave="undo()"
-         onfocus="upDate(this)" onblur="undo()">
-
-    <img src="https://images.pexels.com/photos/386025/pexels-photo-386025.jpeg"
-         alt="Sunset over tropical island"
-         onmouseover="upDate(this)" onmouseleave="undo()"
-         onfocus="upDate(this)" onblur="undo()">
-
-    <img src="https://images.pexels.com/photos/21014/pexels-photo.jpg"
-         alt="Forest hiking trail with sunlight"
-         onmouseover="upDate(this)" onmouseleave="undo()"
-         onfocus="upDate(this)" onblur="undo()">
-
-    <img src="https://images.pexels.com/photos/460621/pexels-photo-460621.jpeg"
-         alt="City skyline at night with lights"
-         onmouseover="upDate(this)" onmouseleave="undo()"
-         onfocus="upDate(this)" onblur="undo()">
-  </div>
-
-  <script src="script.js"></script>
+  <footer>
+    <a href="#top">Jump to the Top</a>
+  </footer>
 </body>
+
 </html>
